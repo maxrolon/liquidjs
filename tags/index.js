@@ -11,6 +11,8 @@ module.exports = function (engine) {
   require('./increment.js')(engine)
   require('./layout.js')(engine)
   require('./raw.js')(engine)
+  require('./schema.js')(engine)
+  require('./section.js')(engine)
   require('./tablerow.js')(engine)
   require('./unless.js')(engine)
 }

@@ -6,7 +6,7 @@ const assert = require('../src/util/assert.js')
 const path = require('path')
 
 module.exports = function (liquid) {
-  liquid.registerTag('include', {
+  liquid.registerTag('section', {
     parse: function (token) {
       var match = staticFileRE.exec(token.args)
       if (match) {
